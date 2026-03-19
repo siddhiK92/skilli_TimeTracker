@@ -1,0 +1,96 @@
+.header {
+  background: var(--primary);
+  padding: 0 32px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.06), 0 4px 24px rgba(0,0,0,0.18);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: -0.3px;
+  user-select: none;
+}
+
+.logoIcon {
+  width: 34px; height: 34px;
+  background: rgba(115,103,240,0.9);
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(115,103,240,0.4);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userChip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 12px 5px 5px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 99px;
+  margin-right: 6px;
+}
+
+.avatar {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 0.72rem;
+  color: #fff;
+  flex-shrink: 0;
+  border: 2px solid rgba(255,255,255,0.15);
+}
+
+.userText {}
+.userName { font-weight: 600; color: #fff; font-size: 0.82rem; line-height: 1.2; }
+.userRole { font-size: 0.7rem; color: rgba(255,255,255,0.5); }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.16s ease;
+  white-space: nowrap;
+}
+.btn:hover   { transform: translateY(-1px); }
+.btn:active  { transform: scale(0.98); }
+
+.btnLeave  { background: rgba(255,159,67,0.15); color: #FF9F43; border: 1px solid rgba(255,159,67,0.3); }
+.btnLeave:hover  { background: rgba(255,159,67,0.25); }
+.btnOnline { background: rgba(40,199,111,0.15); color: #28C76F;  border: 1px solid rgba(40,199,111,0.3); }
+.btnOnline:hover { background: rgba(40,199,111,0.25); }
+.btnDanger { background: rgba(234,84,85,0.15);  color: #EA5455;  border: 1px solid rgba(234,84,85,0.3);  }
+.btnDanger:hover { background: rgba(234,84,85,0.25); }
+
+@media (max-width: 768px) {
+  .header   { padding: 0 16px; }
+  .userText { display: none; }
+  .btnLabel { display: none; }
+  .userChip { padding: 5px; margin-right: 0; }
+}
