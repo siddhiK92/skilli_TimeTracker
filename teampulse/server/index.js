@@ -8,6 +8,7 @@ dotenv.config();
 const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/users');
 const eodRoutes  = require('./routes/eod');
+const adminRoutes = require('./routes/admin');
 
 const app = express();
 
@@ -19,6 +20,7 @@ app.use(express.json());
 app.use('/api/auth',  authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/eod',   eodRoutes);
+app.use('/api/admin', adminRoutes);
 
 // ── Health check ──
 app.get('/api/health', (req, res) => res.json({ status: 'OK', message: 'TeamPulse API running' }));

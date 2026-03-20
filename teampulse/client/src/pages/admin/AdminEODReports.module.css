@@ -1,0 +1,37 @@
+.header { margin-bottom:20px; }
+.title { font-size:1.2rem; font-weight:700; color:var(--text-primary); }
+.sub   { font-size:0.8rem; color:var(--text-secondary); margin-top:3px; }
+.filterCard { background:var(--white); border:1px solid var(--border); border-radius:var(--radius); padding:18px 22px; box-shadow:var(--shadow); margin-bottom:14px; }
+.filterRow { display:flex; align-items:flex-end; gap:14px; flex-wrap:wrap; }
+.label { display:block; font-size:0.75rem; font-weight:500; color:var(--text-secondary); margin-bottom:5px; }
+.input { padding:8px 12px; border:1.5px solid var(--border); border-radius:var(--radius-sm); font-family:'Poppins',sans-serif; font-size:0.83rem; outline:none; background:var(--bg); color:var(--text-primary); min-width:160px; }
+.input:focus { border-color:var(--accent); background:#fff; }
+.filterBtns { display:flex; gap:8px; align-items:flex-end; }
+.applyBtn { padding:9px 16px; background:var(--accent); color:#fff; border:none; border-radius:var(--radius-sm); font-family:'Poppins',sans-serif; font-size:0.82rem; font-weight:600; cursor:pointer; }
+.clearBtn  { padding:9px 16px; background:var(--white); border:1.5px solid var(--border); border-radius:var(--radius-sm); font-family:'Poppins',sans-serif; font-size:0.82rem; font-weight:500; color:var(--text-secondary); cursor:pointer; }
+.toolbar { display:flex; align-items:center; gap:12px; margin-bottom:14px; }
+.search { flex:1; max-width:300px; padding:8px 12px; border:1.5px solid var(--border); border-radius:var(--radius-sm); font-family:'Poppins',sans-serif; font-size:0.83rem; outline:none; background:var(--bg); color:var(--text-primary); }
+.search:focus { border-color:var(--accent); background:#fff; }
+.count { font-size:0.78rem; color:var(--text-secondary); font-weight:500; }
+.empty { padding:48px; text-align:center; color:var(--text-light); font-size:0.88rem; background:var(--white); border:1px solid var(--border); border-radius:var(--radius); }
+.card { background:var(--white); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); margin-bottom:10px; overflow:hidden; transition:border-color 0.15s; }
+.card:hover { border-color:rgba(115,103,240,0.3); }
+.cardOpen   { border-color:var(--accent); }
+.cardHeader { display:flex; align-items:center; justify-content:space-between; padding:15px 20px; cursor:pointer; user-select:none; gap:12px; }
+.userCell { display:flex; align-items:center; gap:10px; flex:1; min-width:0; }
+.avatar { width:36px; height:36px; border-radius:50%; display:grid; place-items:center; font-weight:700; font-size:0.75rem; color:#fff; flex-shrink:0; }
+.name { font-weight:500; font-size:0.85rem; }
+.role { font-size:0.72rem; color:var(--text-secondary); }
+.cardMeta { display:flex; align-items:center; gap:10px; flex-shrink:0; }
+.dateChip { font-size:0.74rem; color:var(--text-secondary); background:var(--bg); border:1px solid var(--border); padding:3px 9px; border-radius:99px; }
+.countChip { font-size:0.71rem; font-weight:600; color:var(--accent); background:rgba(115,103,240,0.08); padding:3px 8px; border-radius:99px; }
+.chev { color:var(--text-light); transition:transform 0.2s; font-size:14px; }
+.chevOpen { transform:rotate(180deg); color:var(--accent); }
+.cardBody { padding:0 20px 16px; border-top:1px solid var(--border); display:flex; gap:20px; flex-wrap:wrap; animation:slideDown 0.2s ease; }
+@keyframes slideDown { from{opacity:0;transform:translateY(-6px)} to{opacity:1;transform:none} }
+.section { min-width:160px; flex:1; }
+.sTitle { font-size:0.7rem; font-weight:700; color:var(--secondary); text-transform:uppercase; letter-spacing:0.5px; margin:14px 0 5px; }
+.ul { list-style:none; padding:0; }
+.ul li { font-size:0.79rem; color:var(--text-primary); padding-left:12px; position:relative; line-height:1.6; }
+.ul li::before { content:'•'; position:absolute; left:0; color:var(--accent); font-weight:700; }
+.submittedAt { width:100%; font-size:0.71rem; color:var(--text-light); margin-top:10px; padding-top:8px; border-top:1px solid var(--border); }

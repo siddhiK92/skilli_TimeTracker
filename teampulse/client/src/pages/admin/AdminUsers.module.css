@@ -1,0 +1,34 @@
+.header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 18px; }
+.title { font-size: 1.2rem; font-weight: 700; color: var(--text-primary); }
+.sub   { font-size: 0.8rem; color: var(--text-secondary); margin-top: 3px; }
+.search {
+  width: 100%; max-width: 340px; padding: 9px 14px; margin-bottom: 14px;
+  border: 1.5px solid var(--border); border-radius: var(--radius-sm);
+  font-family: 'Poppins',sans-serif; font-size: 0.84rem; outline: none;
+  background: var(--bg); color: var(--text-primary); transition: border-color 0.15s;
+}
+.search:focus { border-color: var(--accent); background: #fff; }
+.tableWrap { background: var(--white); border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow); overflow: hidden; }
+.table { width: 100%; border-collapse: collapse; }
+.table th { background: var(--bg); padding: 11px 16px; text-align: left; font-size: 0.71rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid var(--border); }
+.table td { padding: 13px 16px; font-size: 0.83rem; border-bottom: 1px solid var(--border); vertical-align: middle; }
+.table tr:last-child td { border-bottom: none; }
+.table tr:hover td { background: rgba(247,249,252,0.9); }
+.userCell { display: flex; align-items: center; gap: 10px; }
+.avatar { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 0.74rem; color: #fff; }
+.name { font-weight: 500; font-size: 0.84rem; }
+.role { font-size: 0.72rem; color: var(--text-secondary); }
+.hours { font-weight: 600; color: var(--primary); }
+.badge { display: inline-flex; align-items: center; gap: 4px; padding: 3px 9px; border-radius: 99px; font-size: 0.72rem; font-weight: 600; }
+.online  { background: rgba(40,199,111,0.12); color: #1ea55c; }
+.offline { background: rgba(234,84,85,0.1);  color: #c43737; }
+.leave   { background: rgba(255,159,67,0.12); color: #c47a1e; }
+.actions { display: flex; gap: 6px; }
+.btnView   { padding: 5px 12px; border: 1.5px solid var(--border); border-radius: 6px; background: var(--white); font-family: 'Poppins',sans-serif; font-size: 0.75rem; font-weight: 500; cursor: pointer; color: var(--text-secondary); transition: all 0.15s; }
+.btnView:hover { border-color: var(--accent); color: var(--accent); }
+.btnToggle { padding: 5px 12px; border: none; border-radius: 6px; font-family: 'Poppins',sans-serif; font-size: 0.75rem; font-weight: 500; cursor: pointer; transition: all 0.15s; }
+.btnDeact { background: rgba(255,159,67,0.12); color: #c47a1e; }
+.btnAct   { background: rgba(40,199,111,0.12); color: #1ea55c; }
+.btnDel   { padding: 5px 12px; border: none; border-radius: 6px; background: rgba(234,84,85,0.1); color: #c43737; font-family: 'Poppins',sans-serif; font-size: 0.75rem; font-weight: 500; cursor: pointer; }
+.center   { text-align: center; padding: 36px !important; color: var(--text-light); font-size: 0.84rem; }
+@media (max-width: 900px) { .tableWrap { overflow-x: auto; } .table { min-width: 650px; } }
